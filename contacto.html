@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="src/scripts/script.js" defer></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <!--<script src="src/scripts/script_contacto.js"></script>-->
   <title>ORLANDO</title>
   <!--<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
@@ -56,16 +58,25 @@
       <!--Quita Captcha-->
       <input type="hidden" name="_captcha" value="false">
 
+      <input type="hidden" name="_text" value="https://strikerjuan.github.io/formsubmitdemo/contacto.html">
+
       <h3>Mantente en contacto</h3>
       <input type="text" id="nombre" name="Nombre" placeholder="Tu nombre">
       <input type="email" id="email" name="Correo" placeholder="Tu correo">
       <input type="text" id="telefono" name="Telefono" placeholder="Tu numero">
-      <textarea name="mensaje" id="mensaje" cols="30" rows="10" name="Mensaje" placeholder="Como te podemos ayudar?"></textarea>
-      <button type="submit" onclick="sendMail()">Enviar</button>
+      <textarea name="mensaje" id="mensaje" cols="30" rows="10" name="Mensaje"
+        placeholder="Como te podemos ayudar?"></textarea>
+      <button type="submit">Enviar</button>
     </form>
   </div>
-  
+
   <script src="src/scripts/script_gallery.js"></script>
+  <script>
+    var pressedButton = document.getElementsByTagName("button")[0];
+    pressedButton.addEventListener("click", function (event) {
+      alert("Tu correo ha sido enviado correctamente")
+    })
+  </script>
   <footer>
     <div class="content">
       <div class="bottom-details">
