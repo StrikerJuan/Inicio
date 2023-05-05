@@ -51,11 +51,16 @@
   </nav>
   <div class="container">
     <form action="https://formsubmit.co/e8598c09869284301c7bdf2b0ac5b80f" method="POST">
+      <!--Honeypot-->
+      <input type="text" name="_honey" style="display: none;">
+      <!--Quita Captcha-->
+      <input type="hidden" name="_captcha" value="false">
+
       <h3>Mantente en contacto</h3>
-      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
-      <input type="email" id="email" name="email" placeholder="Tu correo">
-      <input type="text" id="telefono" name="telefono" placeholder="Tu numero">
-      <textarea name="mensaje" id="mensaje" cols="30" rows="10" name="mensaje" placeholder="Como te podemos ayudar?"></textarea>
+      <input type="text" id="nombre" name="Nombre" placeholder="Tu nombre">
+      <input type="email" id="email" name="Correo" placeholder="Tu correo">
+      <input type="text" id="telefono" name="Telefono" placeholder="Tu numero">
+      <textarea name="mensaje" id="mensaje" cols="30" rows="10" name="Mensaje" placeholder="Como te podemos ayudar?"></textarea>
       <button type="submit" onclick="sendMail()">Enviar</button>
     </form>
   </div>
