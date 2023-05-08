@@ -20,8 +20,8 @@ form{
     display: flex;
     flex-direction: column;
     padding: 2vw 4vw;
-    width: 100%;
-    max-width: 1000px;
+    width: 90%;
+    max-width: auto;
     border-radius: 10px;
 }
 form h3{

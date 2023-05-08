@@ -5,5 +5,23 @@
 }
 
 html {
-    background: rgb(95, 123, 218);
+    /*////////////////////////////////////*/
+    /*background: rgba(122, 122, 124, 0.589);*/
+    background: linear-gradient(-45deg,#bdb5b6,#191822,#f48e21,#f73b3b); 
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
 }
+    @keyframes color{
+        0%{
+            background-position: 0 50%;
+        }
+        50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0 50%;
+        }
+
+    }
+    /*///////////////////////////////////*/
+    
